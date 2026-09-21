@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #fff7f8;
+
+    color: #6d5a62;
+
+    text-align: center;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background: #f5d9e2;
+
+    padding: 25px;
+
+    box-shadow: 0 3px 10px #00000015;
+}
+
+header h1 {
+    color: #a8758b;
+
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #8d707b;
+}
+
+
+/* ÁREA PRINCIPAL */
+
+main {
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+}
+
+
+/* ÁREA DO CROCHÊ */
+
+.area-croche {
+    height: 480px;
+
+    background: #e9f3f0;
+
+    border-radius: 30px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px #00000012;
+}
+
+
+/* MESA */
+
+.mesa {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    left: 0;
+    top: 0;
+}
+
+
+/* NOVELO */
+
+.novelo {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+
+    background: #c99772;
+    border-radius: 50%;
+
+    left: 70px;
+    bottom: 70px;
+
+    box-shadow: inset -10px -10px 20px #00000015;
+}
+
+.novelo::before,
+.novelo::after {
+    content: "";
+
+    position: absolute;
+
+    border: 3px solid #c99772;
+
+    border-radius: 50%;
+}
+
+.novelo::before {
+    width: 65px;
+    height: 45px;
+
+    left: 18px;
+    top: 28px;
+}
+
+.novelo::after {
+    width: 40px;
+    height: 25px;
+
+    left: 30px;
+    top: 38px;
+}
+
+
+/* FIO */
+
+.fio {
+    position: absolute;
+
+    width: 260px;
+    height: 5px;
+
+    background:#c99772;
+
+    left: 130px;
+    bottom: 110px;
+
+    transform: rotate(-8deg);
+
+    border-radius: 10px;
+
+    transform-origin: left center;
+}
+
+
+/* AGULHA */
+
+.agulha {
+    position: absolute;
+
+    width: 220px;
+    height: 12px;
+
+    background: #d7d7d7;
+
+    border-radius: 10px;
+
+    top: 120px;
+    left: 380px;
+
+    transform: rotate(-25deg);
+
+    transition: 0.3s;
+}
+
+.gancho {
+    position: absolute;
+
+    width: 25px;
+    height: 20px;
+
+    border: 6px solid #aaa;
+
+    border-left: none;
+
+    border-radius: 0 20px 20px 0;
+
+    right: -15px;
+    top: -4px;
+}
+
+
+/* URSO */
+
+.urso {
+    position: absolute;
+
+    width: 220px;
+    height: 300px;
+
+    bottom: 35px;
+    left: 50%;
+
+    transform: translateX(-50%) scale(0);
+
+    transition: 0.8s;
+
+    opacity: 0;
+}
+
+
+/* CABEÇA */
+
+.cabeca {
+    position: absolute;
+
+    width: 150px;
+    height: 135px;
+
+    background: #c99772;
+
+    border-radius: 50%;
+
+    top: 20px;
+    left: 35px;
+
+    box-shadow: inset -8px -8px 15px #00000012;
+}
+
+
+/* ORELHAS */
+
+.orelha {
+    position: absolute;
+
+    width: 55px;
+    height: 55px;
+
+    background: #c99772;
+
+    border-radius: 50%;
+
+    top: 5px;
+}
+
+.orelha.esquerda {
+    left: 25px;
+}
+
+.orelha.direita {
+    right: 25px;
+}
+
+
+/* OLHOS */
+
+.olho {
+    position: absolute;
+
+    width: 13px;
+    height: 13px;
+
+    background: #493b3b;
+
+    border-radius: 50%;
+
+    top: 55px;
+}
+
+.olho.esquerdo {
+    left: 45px;
+}
+
+.olho.direito {
+    right: 45px;
+}
+
+
+/* FOCINHO */
+
+.focinho {
+    position: absolute;
+
+    width: 55px;
+    height: 45px;
+
+    background: #e4bd9c;
+
+    border-radius: 50%;
+
+    left: 48px;
+    top: 72px;
+}
+
+.nariz {
+    position: absolute;
+
+    width: 15px;
+    height: 11px;
+
+    background: #493b3b;
+
+    border-radius: 50%;
+
+    left: 20px;
+    top: 8px;
+}
+
+.boca {
+    position: absolute;
+
+    width: 18px;
+    height: 10px;
+
+    border-bottom: 3px solid #493b3b;
+
+    border-radius: 50%;
+
+    left: 18px;
+    top: 17px;
+}
+
+
+/* CORPO */
+
+.corpo {
+    position: absolute;
+
+    width: 140px;
+    height: 150px;
+
+    background: #c99772;
+
+    border-radius: 45%;
+
+    left: 40px;
+    top: 140px;
+}
+
+
+/* BRAÇOS */
+
+.braco {
+    position: absolute;
+
+    width: 45px;
+    height: 110px;
+
+    background: #c99772;
+
+    border-radius: 30px;
+
+    top: 155px;
+}
+
+.braco.esquerdo {
+    left: 5px;
+
+    transform: rotate(20deg);
+}
+
+.braco.direito {
+    right: 5px;
+
+    transform: rotate(-20deg);
+}
+
+
+/* PÉS */
+
+.pe {
+    position: absolute;
+
+    width: 60px;
+    height: 50px;
+
+    background: #c99772;
+
+    border-radius: 50%;
+
+    bottom: 0;
+}
+
+.pe.esquerdo {
+    left: 30px;
+}
+
+.pe.direito {
+    right: 30px;
+}
+
+
+/* CONTROLES */
+
+.controle {
+    margin-top: 30px;
+
+    background: #ffffff;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 5px 15px #00000010;
+}
+
+.controle h2 {
+    color: #a8758b;
+
+    margin-bottom: 10px;
+}
+
+#etapa {
+    margin-bottom: 20px;
+}
+
+
+/* BOTÕES */
+
+.botoes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+
+    padding: 14px 22px;
+
+    border-radius: 25px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#botaoComecar {
+    background: #c9a7d8;
+
+    color: white;
+}
+
+#botaoComecar:hover {
+    background: #b38ac5;
+
+    transform: scale(1.05);
+}
+
+#botaoReiniciar {
+    background: #f5d9e2;
+
+    color: #805f6c;
+}
+
+#botaoReiniciar:hover {
+    background: #edc4d1;
+}
+
+
+/* BARRA DE PROGRESSO */
+
+.progresso {
+    width: 80%;
+
+    height: 15px;
+
+    background: #eee;
+
+    border-radius: 20px;
+
+    margin: 25px auto 0;
+
+    overflow: hidden;
+}
+
+#barraProgresso {
+    width: 0%;
+
+    height: 100%;
+
+    background: #a9cfc5;
+
+    border-radius: 20px;
+
+    transition: 0.5s;
+}
+
+
+/* ANIMAÇÃO DA AGULHA */
+
+.crochando {
+    animation: movimentoAgulha 1s infinite alternate;
+}
+
+@keyframes movimentoAgulha {
+
+    from {
+        transform: rotate(-25deg) translate(0, 0);
+    }
+
+    to {
+        transform: rotate(-15deg) translate(35px, 20px);
+    }
+}
+
+
+/* APARECIMENTO DO URSO */
+
+.mostrar {
+    transform: translateX(-50%) scale(1);
+
+    opacity: 1;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    padding: 20px;
+
+    color: #a8758b;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .area-croche {
+        height: 400px;
+    }
+
+    .agulha {
+        left: 250px;
+        width: 170px;
+    }
+
+    .novelo {
+        left: 30px;
+    }
+
+}

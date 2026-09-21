@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ateliê de Crochê</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🧶 Ateliê de Crochê</h1>
+        <p>Vamos fazer um ursinho amigurumi!</p>
+    </header>
+
+    <main>
+
+        <section class="area-croche">
+
+            <!-- Novelo -->
+            <div class="novelo">
+                <div class="fio-novelo"></div>
+            </div>
+
+            <!-- Área onde acontece a animação -->
+            <div class="mesa">
+
+                <!-- Fio -->
+                <div class="fio"></div>
+
+                <!-- Agulha -->
+                <div class="agulha">
+                    <div class="gancho"></div>
+                </div>
+
+                <!-- Ursinho -->
+                <div class="urso">
+
+                    <div class="orelha esquerda"></div>
+                    <div class="orelha direita"></div>
+
+                    <div class="cabeca">
+
+                        <div class="olho esquerdo"></div>
+                        <div class="olho direito"></div>
+
+                        <div class="focinho">
+                            <div class="nariz"></div>
+                            <div class="boca"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="corpo"></div>
+
+                    <div class="braco esquerdo"></div>
+                    <div class="braco direito"></div>
+
+                    <div class="pe esquerdo"></div>
+                    <div class="pe direito"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="controle">
+
+            <h2 id="status">
+                Pronta para começar?
+            </h2>
+
+            <p id="etapa">
+                Etapa 0 de 6
+            </p>
+
+            <div class="botoes">
+
+                <button id="botaoComecar" onclick="comecarCroche()">
+                    🧶 Começar a fazer crochê
+                </button>
+
+                <button id="botaoReiniciar" onclick="reiniciar()">
+                    ↻ Reiniciar
+                </button>
+
+            </div>
+
+            <div class="progresso">
+
+                <div id="barraProgresso"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Feito com carinho e muitos pontinhos 🧶💕</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
